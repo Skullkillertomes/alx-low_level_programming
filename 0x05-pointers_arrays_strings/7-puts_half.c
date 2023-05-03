@@ -1,25 +1,26 @@
 #include "main.h"
 
 /**
- * puts2 - Prints every other character of a string
- * @str: The string to be treated
- * Retun: void
+ * puts_half - Prints every other character of a string
+ * @str: input
  */
 
-void puts2(char *str)
+void puts_half(char *str)
 
 {
-	int i;
-	int j = 0;
+	int len = 0;
 
-	while (str[j] != '\0')
+	while (*str != '\0')
 	{
-	j++;
+	len++;
+	str++;
+	}
+	str -= (len / 2);
+	while (*str != '\0')
+	{
+	_putchar(*str);
+	str++;
 	}
 
-	for (i = 0; i < j; i += 2)
-	{
-	_putchar(str[i]);
-	}
 	_putchar('\n');
 }
