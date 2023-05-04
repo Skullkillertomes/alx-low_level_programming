@@ -3,12 +3,11 @@
 /**
  * reverse_array - Reverses the content of an array of intergers.
  * @a: The array of intergers to be reversed.
- * @n; The number of elements in the array.
+ * @n: The number of elements in the array.
  *
  */
 
 void reverse_array(int *a, int n)
-
 {
 	int tmp, index;
 
