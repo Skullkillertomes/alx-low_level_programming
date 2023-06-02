@@ -4,12 +4,12 @@
 
 /**
  * struct list_s - singly linked lists.
- * @str: string - (malloced string).
+ * @str: string - (malloc'ed string).
  * @next: points to the next node.
  * @len: length of the string.
  *
  * Description: singly linked list node 
- * for project
+ *
  */
 typdef struct list_s
 {
